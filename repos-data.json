@@ -1,0 +1,1295 @@
+{
+  "local_repositories": {
+    "alpine": {
+      "alpine_test1": {
+        "key": "alpine_test1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "alpine_test2": {
+        "key": "alpine_test2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "generic": {
+      "generic-1": {
+        "key": "generic-1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "generic-2": {
+        "key": "generic-2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "chef": {
+      "chef1": {
+        "key": "chef1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "chef2": {
+        "key": "chef2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "pypi": {
+      "pypi1": {
+        "key": "pypi1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "pypi2": {
+        "key": "pypi2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "docker": {
+      "docker1": {
+        "key": "docker1",
+        "description": "A local Docker repository for internal use",
+        "notes": "Used for staging Docker images",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "*.tmp",
+        "repo_layout_ref": "simple-default",
+        "block_pushing_schema1": true,
+        "priority_resolution": true,
+        "project_environments": [],
+        "max_unique_tags": 0,
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "docker_tag_retention": 1,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "docker2": {
+        "key": "docker2",
+        "description": "A local Docker repository for internal use",
+        "notes": "Used for staging Docker images",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "block_pushing_schema1": true,
+        "priority_resolution": true,
+        "project_environments": [],
+        "max_unique_tags": 0,
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "docker_tag_retention": 1,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "maven": {
+      "maven1": {
+        "key": "maven1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "maven-2-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "checksum_policy_type": "client-checksums",
+        "handle_releases": true,
+        "handle_snapshots": false,
+        "max_unique_snapshots": 0,
+        "snapshot_version_behavior": "unique",
+        "suppress_pom_consistency_checks": true
+      },
+      "maven2": {
+        "key": "maven2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "maven-2-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "checksum_policy_type": "client-checksums",
+        "handle_releases": true,
+        "handle_snapshots": false,
+        "max_unique_snapshots": 0,
+        "snapshot_version_behavior": "unique",
+        "suppress_pom_consistency_checks": true
+      }
+    },
+    "npm": {
+      "npm1": {
+        "key": "npm1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "npm-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "npm2": {
+        "key": "npm2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "npm-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "terraform_module": {
+      "terraform1": {
+        "key": "terraform1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "terraform-module-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "terraform2": {
+        "key": "terraform2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "terraform-module-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "terraform_provider": {
+      "terraform3": {
+        "key": "terraform3",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "terraform-provider-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "terraform4": {
+        "key": "terraform4",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "terraform-provider-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "helm": {
+      "helm1": {
+        "key": "helm1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "force_non_duplicate_chart": false,
+        "force_metadata_name_version": false
+      },
+      "helm2": {
+        "key": "helm2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "force_non_duplicate_chart": false,
+        "force_metadata_name_version": false
+      }
+    },
+    "cocoapods": {
+      "cocoapods1": {
+        "key": "cocoapods1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "cocoapods2": {
+        "key": "cocoapods2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "helmoci": {
+      "helmoci1": {
+        "key": "helmoci1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "max_unique_tags": 0,
+        "docker_tag_retention": 1
+      },
+      "helmoci2": {
+        "key": "helmoci2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "max_unique_tags": 0,
+        "docker_tag_retention": 1
+      }
+    },
+    "nuget": {
+      "nuget1": {
+        "key": "nuget1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "nuget-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "force_nuget_authentication": false,
+        "max_unique_snapshots": 0
+      },
+      "nuget2": {
+        "key": "nuget2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "nuget-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "force_nuget_authentication": false,
+        "max_unique_snapshots": 0
+      }
+    },
+    "debian": {
+      "debian1": {
+        "key": "debian1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": null,
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "debian_trivial_layout": false,
+        "optional_index_compression_formats": [
+          "bz2"
+        ]
+      },
+      "debian2": {
+        "key": "debian2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": null,
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "debian_trivial_layout": false,
+        "optional_index_compression_formats": [
+          "bz2"
+        ]
+      }
+    },
+    "cran": {
+      "cran1": {
+        "key": "cran1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "cran2": {
+        "key": "cran2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "gems": {
+      "gems1": {
+        "key": "gems1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "gems2": {
+        "key": "gems2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "go": {
+      "go1": {
+        "key": "go1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "go-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "go2": {
+        "key": "go2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "go-default",
+        "priority_resolution": true,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "ivy": {
+      "ivy1": {
+        "key": "ivy1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "ivy-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "ivy2": {
+        "key": "ivy2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "ivy-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "composer": {
+      "composer1": {
+        "key": "composer1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "composer-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      },
+      "composer2": {
+        "key": "composer2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "composer-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false
+      }
+    },
+    "gradle": {
+      "gradle1": {
+        "key": "gradle1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "gradle-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": true,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "checksum_policy_type": "client-checksums",
+        "handle_releases": true,
+        "handle_snapshots": false,
+        "max_unique_snapshots": 0,
+        "snapshot_version_behavior": "unique",
+        "suppress_pom_consistency_checks": true
+      },
+      "gradle2": {
+        "key": "gradle2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "gradle-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": true,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "checksum_policy_type": "client-checksums",
+        "handle_releases": true,
+        "handle_snapshots": false,
+        "max_unique_snapshots": 0,
+        "snapshot_version_behavior": "unique",
+        "suppress_pom_consistency_checks": true
+      }
+    },
+    "rpm": {
+      "rpm1": {
+        "key": "rpm1",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "calculate_yum_metadata": true,
+        "enable_file_lists_indexing": false,
+        "yum_root_depth": 0,
+        "yum_group_file_names": null
+      },
+      "rpm2": {
+        "key": "rpm2",
+        "description": "",
+        "notes": "",
+        "project_key": null,
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "priority_resolution": false,
+        "project_environments": [],
+        "blacked_out": false,
+        "property_sets": [
+          "artifactory"
+        ],
+        "archive_browsing_enabled": false,
+        "download_direct": false,
+        "cdn_redirect": false,
+        "x_ray_index": false,
+        "calculate_yum_metadata": true,
+        "enable_file_lists_indexing": false,
+        "yum_root_depth": 0,
+        "yum_group_file_names": null
+      }
+    }
+  },
+  "virtual_repositories": {
+    "chef": {
+      "example-chef-1": {
+        "key": "example-chef-1",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "retrieval_cache_period_seconds": 7200
+      },
+      "example-chef-2": {
+        "key": "example-chef-2",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "retrieval_cache_period_seconds": 600
+      }
+    },
+    "ivy": {
+      "example-ivy-1": {
+        "key": "example-ivy-1",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "ivy-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "pom_repository_references_cleanup_policy": "discard_active_reference",
+        "key_pair": ""
+      },
+      "example-ivy-2": {
+        "key": "example-ivy-2",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "ivy-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "pom_repository_references_cleanup_policy": "discard_active_reference",
+        "key_pair": ""
+      }
+    },
+    "docker": {
+      "example-docker-1": {
+        "key": "example-docker-1",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "resolve_docker_tags_by_timestamp": false
+      },
+      "example-docker-2": {
+        "key": "example-docker-2",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "resolve_docker_tags_by_timestamp": false
+      }
+    },
+    "maven": {
+      "example-maven-1": {
+        "key": "example-maven-1",
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "pom_repository_references_cleanup_policy": "discard_active_reference",
+        "force_maven_authentication": false,
+        "repositories": []
+      },
+      "example-maven-2": {
+        "key": "example-maven-2",
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "pom_repository_references_cleanup_policy": "discard_active_reference",
+        "force_maven_authentication": false,
+        "repositories": []
+      }
+    },
+    "npm": {
+      "example-npm-1": {
+        "key": "example-npm-1",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "retrieval_cache_period_seconds": 600,
+        "external_dependencies_enabled": false
+      },
+      "example-npm-2": {
+        "key": "example-npm-2",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "retrieval_cache_period_seconds": 600,
+        "external_dependencies_enabled": false
+      }
+    },
+    "generic": {
+      "example-generic-1": {
+        "key": "example-generic-1",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "artifactory_requests_can_retrieve_remote_artifacts": false
+      },
+      "example-generic-2": {
+        "key": "example-generic-2",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "artifactory_requests_can_retrieve_remote_artifacts": false
+      }
+    },
+    "nuget": {
+      "example-nuget-1": {
+        "key": "example-nuget-1",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "force_nuget_authentication": false
+      },
+      "example-nuget-2": {
+        "key": "example-nuget-2",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "nuget-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "force_nuget_authentication": false
+      }
+    },
+    "helm": {
+      "example-helm-1": {
+        "key": "example-helm-1",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "retrieval_cache_period_seconds": 7200,
+        "use_namespaces": false
+      },
+      "example-helm-2": {
+        "key": "example-helm-2",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "retrieval_cache_period_seconds": 7200,
+        "use_namespaces": false
+      }
+    },
+    "gradle": {
+      "example-gradle-1": {
+        "key": "example-gradle-1",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "gradle-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "pom_repository_references_cleanup_policy": "discard_active_reference",
+        "key_pair": ""
+      },
+      "example-gradle-2": {
+        "key": "example-gradle-2",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "gradle-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "pom_repository_references_cleanup_policy": "discard_active_reference",
+        "key_pair": ""
+      }
+    },
+    "pypi": {
+      "example-pypi-1": {
+        "key": "example-pypi-1",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false
+      },
+      "example-pypi-2": {
+        "key": "example-pypi-2",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false
+      }
+    },
+    "gems": {
+      "example-gems-1": {
+        "key": "example-gems-1",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false
+      },
+      "example-gems-2": {
+        "key": "example-gems-2",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false
+      }
+    },
+    "cran": {
+      "example-cran-1": {
+        "key": "example-cran-1",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "retrieval_cache_period_seconds": 7200
+      },
+      "example-cran-2": {
+        "key": "example-cran-2",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "retrieval_cache_period_seconds": 7200
+      }
+    },
+    "terraform": {
+      "example-terraform-1": {
+        "key": "example-terraform-1",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "terraform-module-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false
+      },
+      "example-terraform-2": {
+        "key": "example-terraform-2",
+        "repositories": [],
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "terraform-module-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false
+      }
+    },
+    "go": {
+      "example-go-1": {
+        "key": "example-go-1",
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "go-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "external_dependencies_enabled": true,
+        "external_dependencies_patterns": [],
+        "repositories": []
+      }
+    },
+    "rpm": {
+      "example-rpm-1": {
+        "key": "example-rpm-1",
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "repositories": []
+      },
+      "example-rpm-2": {
+        "key": "example-rpm-2",
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "repositories": []
+      }
+    },
+    "debian": {
+      "example-debian-1": {
+        "key": "example-debian-1",
+        "description": "",
+        "notes": "",
+        "project_environments": [],
+        "includes_pattern": "**/*",
+        "excludes_pattern": "",
+        "repo_layout_ref": "simple-default",
+        "artifactory_requests_can_retrieve_remote_artifacts": false,
+        "retrieval_cache_period_seconds": 7200,
+        "optional_index_compression_formats": [
+          "bz2"
+        ],
+        "debian_default_architectures": "amd64,i386",
+        "repositories": []
+      }
+    }
+  },
+  "remote_repositories": {
+    "docker": {
+      "docker_remote": {
+        "key": "docker_remote"
+      }
+    }
+  }
+}
