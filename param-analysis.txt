@@ -1,0 +1,73 @@
+Unique Parameters (user-prompted):
+  key: Always unique and required for each repo. Prompt user.
+  description: Can be unique per repo, but often empty. Optional prompt.
+  notes: Can be unique per repo, but often empty. Optional prompt.
+  repo_layout_ref: Usually correlated with repo type (see dependencies below). Prompt for repo type, infer default layout.
+  project_key: Always null here. Prompt only if projects are in use.
+  repositories (in virtual repos): Prompt user to select which repos to aggregate.
+  
+Redundant/Default Parameters:
+  includes_pattern: Always "**/*" (default). No need to prompt unless advanced use.
+  excludes_pattern: Usually "", sometimes set (e.g., Docker1). Prompt only for advanced use.
+  project_environments: Always empty array. Redundant in most cases.
+  blacked_out: Almost always false (except gradle). Prompt only for special use cases.
+  property_sets: Usually ["artifactory"] or null (debian). Prompt only if you want custom property sets.
+  archive_browsing_enabled: Always false. Default, no need to prompt.
+  download_direct: Always false. Default, no need to prompt.
+  cdn_redirect: Always false. Default, no need to prompt.
+  x_ray_index: Always false. Default, no need to prompt.
+  priority_resolution: Default is false, some repos have true. Prompt only if user wants to enable.
+  
+Type-Specific Parameters (dependent):
+  repo_layout_ref: Depends on repository type (e.g., "maven-2-default" for Maven, "simple-default" for most others).
+  block_pushing_schema1, max_unique_tags, docker_tag_retention: Only for Docker and HelmOCI.
+  checksum_policy_type, handle_releases, handle_snapshots, max_unique_snapshots, snapshot_version_behavior, suppress_pom_consistency_checks: Maven/Gradle/Ivy specific.
+  force_nuget_authentication, max_unique_snapshots: Nuget only.
+  debian_trivial_layout, optional_index_compression_formats: Debian only.
+  calculate_yum_metadata, enable_file_lists_indexing, yum_root_depth, yum_group_file_names: RPM only.
+  force_non_duplicate_chart, force_metadata_name_version: Helm only.
+  external_dependencies_enabled, external_dependencies_patterns: Go/NPM only.
+  
+2. Parameter Dependency Relationships
+  A. Dependencies by Repository Type
+  repo_layout_ref is dictated by repository type:
+  Maven: "maven-2-default"
+  Gradle: "gradle-default"
+  Ivy: "ivy-default"
+  Go: "go-default"
+  Nuget: "nuget-default"
+  Composer: "composer-default"
+  Terraform Module: "terraform-module-default"
+  Terraform Provider: "terraform-provider-default"
+  NPM: "npm-default"
+  Others: "simple-default"
+  Type-specific fields (see above) are included only for their respective repo types.
+  
+B. Related Parameters
+  handle_releases, handle_snapshots, max_unique_snapshots are always found together in Maven/Gradle repos.
+  force_nuget_authentication and max_unique_snapshots are always found together in Nuget repos.
+  block_pushing_schema1, max_unique_tags, docker_tag_retention are always together in Docker and HelmOCI.
+  
+3. Recommendations: What to Prompt, What to Omit
+Always Prompt For:
+  key (repo name)
+  repo type (from which other defaults can be inferred)
+  description/notes (optional, but can add value)
+  repositories (for virtual repos: which repos to aggregate)
+Prompt Only If User Wants Advanced/Non-default Configuration:
+  excludes_pattern
+  priority_resolution
+  blacked_out
+  property_sets
+  archive_browsing_enabled
+  download_direct
+  cdn_redirect
+  x_ray_index
+  project_environments
+  Type-specific advanced fields (e.g., Docker tag retention, Maven snapshot behavior, etc.)
+Omit/Default:
+  includes_pattern (almost always "**/*")
+  archive_browsing_enabled, download_direct, cdn_redirect, x_ray_index (all default to false)
+  project_environments (empty array, unless your org uses them)
+  property_sets (default ["artifactory"], unless your org customizes)
+  Most type-specific fields unless user requests advanced config.
