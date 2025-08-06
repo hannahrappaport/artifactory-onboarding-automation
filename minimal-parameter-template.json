@@ -5,25 +5,25 @@
     
       // --- TYPE DEPENDENT --- 
       // depends on maven, gradle, or ivy
-      // "checksumPolicyType": "",       
-      // "handleReleases": true,       
-      // "handleSnapshots": false,      
+      "checksumPolicyType": "",       
+      "handleReleases": true,       
+      "handleSnapshots": false,      
     
       // Docker:
-      // "blockPushingSchema1": false, 
+      "blockPushingSchema1": false, 
     
       // Nuget:
-      // "forceNugetAuthentication": false, 
+      "forceNugetAuthentication": false, 
     
       // Debian:
-      // "debianTrivialLayout": false,  
+      "debianTrivialLayout": false,  
     
       // RPM:
-      // "calculateYumMetadata": false, 
+      "calculateYumMetadata": false, 
     
       // Helm:
-      // "forceNonDuplicateChart": false,     
-      // "forceMetadataNameVersion": false      
+      "forceNonDuplicateChart": false,     
+      "forceMetadataNameVersion": false      
   }
 
   "virtual": {
@@ -33,17 +33,17 @@
     
       // --- TYPE DEPENDENT ---
       // depends on maven, gradle, or ivy
-      // "pomRepositoryReferencesCleanupPolicy": "", 
+      "pomRepositoryReferencesCleanupPolicy": "", 
     
       // Helm:
-      // "useNamespaces": false,                
+      "useNamespaces": false,                
     
       // Nuget:
-      // "forceNugetAuthentication": false   
+      "forceNugetAuthentication": false   
     
       // Debian:
-      // "optionalIndexCompressionFormats": []    
-      // "debianDefaultArchitectures": ""         
+      "optionalIndexCompressionFormats": []    
+      "debianDefaultArchitectures": ""         
 
   }
 
@@ -55,10 +55,10 @@
       // --- TYPE DEPENDENT  ---
     
       // Go:
-      // "externalDependenciesEnabled": false,  
-      // "externalDependenciesPatterns": []    
+      "externalDependenciesEnabled": false,  
+      "externalDependenciesPatterns": []    
     
       // NPM:
-      // "enableCookieManagement": false        
+      "enableCookieManagement": false        
   }
 }
