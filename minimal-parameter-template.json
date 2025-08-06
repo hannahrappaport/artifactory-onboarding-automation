@@ -1,0 +1,64 @@
+{
+  "local": {
+      "key": "",             
+      "packageType": ""      
+    
+      // --- TYPE DEPENDENT --- 
+      // depends on maven, gradle, or ivy
+      // "checksumPolicyType": "",       
+      // "handleReleases": true,       
+      // "handleSnapshots": false,      
+    
+      // Docker:
+      // "blockPushingSchema1": false, 
+    
+      // Nuget:
+      // "forceNugetAuthentication": false, 
+    
+      // Debian:
+      // "debianTrivialLayout": false,  
+    
+      // RPM:
+      // "calculateYumMetadata": false, 
+    
+      // Helm:
+      // "forceNonDuplicateChart": false,     
+      // "forceMetadataNameVersion": false      
+  }
+
+  "virtual": {
+      "key": "",              
+      "packageType": "",      
+      "repositories": []      
+    
+      // --- TYPE DEPENDENT ---
+      // depends on maven, gradle, or ivy
+      // "pomRepositoryReferencesCleanupPolicy": "", 
+    
+      // Helm:
+      // "useNamespaces": false,                
+    
+      // Nuget:
+      // "forceNugetAuthentication": false   
+    
+      // Debian:
+      // "optionalIndexCompressionFormats": []    
+      // "debianDefaultArchitectures": ""         
+
+  }
+
+  "remote": {
+      "key": "",            
+      "packageType": "",    
+      "url": ""              
+    
+      // --- TYPE DEPENDENT  ---
+    
+      // Go:
+      // "externalDependenciesEnabled": false,  
+      // "externalDependenciesPatterns": []    
+    
+      // NPM:
+      // "enableCookieManagement": false        
+  }
+}
