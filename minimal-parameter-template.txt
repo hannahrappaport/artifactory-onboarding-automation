@@ -1,65 +1,64 @@
 -- boolean types re alays T/F for that value across all instances unless specified otherwise -- 
 {
   "local": {
-      "key": "",             
-      "packageType": ""      
+      "key": null,             
+      "packageType": null    
     
       // --- TYPE DEPENDENT --- 
       // depends on maven, gradle, or ivy
-      "checksumPolicyType": "",       
-      "handleReleases": true,       
-      "handleSnapshots": false,     
-    
-      // Docker:
-      "blockPushingSchema1": false, // only always true for docker and helm
-    
+      "checksumPolicyType": null,       
+      "handleReleases": true,      
+      "handleSnapshots": false,  
+
+      //Docker
+      "blockPushingSchema1": false  
+
       // Nuget:
       "forceNugetAuthentication": false, 
-    
-      // Debian:
-      "debianTrivialLayout": false, 
-    
-      // RPM:
-      "calculateYumMetadata": true, 
-    
-      // Helm:
-      "forceNonDuplicateChart": false,     
-      "forceMetadataNameVersion": false      
+   
+
+    // EDGE CASES -- almost always consistent
+      // "blacked_out: false
+      // "debianTrivialLayout": false       -- debian
+      // "calculateYumMetadata": true       -- RPM
+      // "forceNonDuplicateChart": false    -- helm
+      // forceMetadataNameVersion": false   -- helm
   }
 
   "virtual": {
-      "key": "",              
-      "packageType": "",      
+      "key": null,              
+      "packageType": null,      
       "repositories": []      
     
       // --- TYPE DEPENDENT ---
       // depends on maven, gradle, or ivy
-      "pomRepositoryReferencesCleanupPolicy": "", 
-    
-      // Helm:
-      "useNamespaces": false,                
+      "pomRepositoryReferencesCleanupPolicy": null,        
     
       // Nuget:
       "forceNugetAuthentication": false   
     
       // Debian:
       "optionalIndexCompressionFormats": []    
-      "debianDefaultArchitectures": ""         
+      "debianDefaultArchitectures": null
+
+
+      // EDGE CASES -- almost always consistent
+      // "useNamespaces": false     -- helm
 
   }
 
   "remote": {
-      "key": "",            
-      "packageType": "",    
-      "url": ""              
+      "key": null,            
+      "packageType": null,    
+      "url": null,
     
       // --- TYPE DEPENDENT  ---
-    
       // Go:
-      "externalDependenciesEnabled": false,  
       "externalDependenciesPatterns": []    
-    
-      // NPM:
-      "enableCookieManagement": false        
+
+
+      // EDGE CASES -- almsot always consistent
+      // "externalDependenciesEnabled": false    -- Go
+      // "enableCookieManagement": false         
   }
 }
