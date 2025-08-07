@@ -1,3 +1,4 @@
+-- boolean types re alays T/F for that value across all instances unless specified otherwise --
 {
   "local": {
       "key": "",             
@@ -7,19 +8,19 @@
       // depends on maven, gradle, or ivy
       "checksumPolicyType": "",       
       "handleReleases": true,       
-      "handleSnapshots": false,      
+      "handleSnapshots": false,     
     
       // Docker:
-      "blockPushingSchema1": false, 
+      "blockPushingSchema1": false, // only always true for docker and helm
     
       // Nuget:
       "forceNugetAuthentication": false, 
     
       // Debian:
-      "debianTrivialLayout": false,  
+      "debianTrivialLayout": false, 
     
       // RPM:
-      "calculateYumMetadata": false, 
+      "calculateYumMetadata": true, 
     
       // Helm:
       "forceNonDuplicateChart": false,     
