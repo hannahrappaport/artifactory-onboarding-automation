@@ -1,4 +1,4 @@
--- boolean types re alays T/F for that value across all instances unless specified otherwise --
+-- boolean types re alays T/F for that value across all instances unless specified otherwise -- 
 {
   "local": {
       "key": "",             
