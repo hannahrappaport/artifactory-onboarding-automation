@@ -62,3 +62,231 @@
       // "enableCookieManagement": false         
   }
 }
+
+Default values for repos:
+
+
+# Defaults per local repository package type.
+# Note: These aim to mirror common Artifactory defaults. Adjust if your instance differs.
+local_repo_defaults = {
+maven = {
+    checksum_policy_type            = "client-checksums"
+    snapshot_version_behavior       = "unique"
+    max_unique_snapshots            = 0
+    handle_releases                 = true
+    handle_snapshots                = false
+    suppress_pom_consistency_checks = false
+}
+
+gradle = {
+    checksum_policy_type            = "client-checksums"
+    snapshot_version_behavior       = "unique"
+    max_unique_snapshots            = 0
+    handle_releases                 = true
+    handle_snapshots                = false
+    suppress_pom_consistency_checks = false
+}
+
+ivy = {
+    checksum_policy_type            = "client-checksums"
+    snapshot_version_behavior       = "unique"
+    max_unique_snapshots            = 0
+    handle_releases                 = true
+    handle_snapshots                = false
+    suppress_pom_consistency_checks = false
+}
+
+sbt = {
+    checksum_policy_type            = "client-checksums"
+    snapshot_version_behavior       = "unique"
+    max_unique_snapshots            = 0
+    handle_releases                 = true
+    handle_snapshots                = false
+    suppress_pom_consistency_checks = false
+}
+
+docker = {
+    block_pushing_schema1 = false
+    max_unique_tags       = 0
+    docker_tag_retention  = 0
+}
+
+nuget = {
+    force_nuget_authentication = false
+    max_unique_snapshots       = 0
+}
+
+debian = {
+    optional_index_compression_formats = null
+    trivial_layout                     = false
+    ddeb_supported                     = false
+}
+
+rpm = {
+    calculate_yum_metadata     = false
+    enable_file_lists_indexing = false
+    yum_root_depth             = 0
+    yum_group_file_names       = null
+}
+
+helm = {
+    force_non_duplicate_chart   = false
+    force_metadata_name_version = false
+}
+
+helmoci = {
+    max_unique_tags      = 0
+    docker_tag_retention = 0
+}
+
+# Types with no special defaults beyond server behavior
+alpine            = {}
+generic           = {}
+npm               = {}
+pypi              = {}
+cran              = {}
+composer          = {}
+gems              = {}
+go                = {}
+chef              = {}
+cocoapods         = {}
+terraform_module  = {}
+terraform_provider = {}
+}
+
+
+# Defaults per remote repository package type.
+# Note: These aim to mirror common Artifactory defaults. Adjust if your instance differs.
+remote_repo_defaults = {
+maven = {
+    fetch_jars_eagerly              = false
+    fetch_sources_eagerly           = false
+    handle_releases                 = true
+    handle_snapshots                = true
+    suppress_pom_consistency_checks = false
+    reject_invalid_jars             = false
+    remote_repo_checksum_policy_type = "generate-if-absent"
+    max_unique_snapshots            = 0
+}
+
+gradle = {
+    fetch_jars_eagerly              = false
+    fetch_sources_eagerly           = false
+    handle_releases                 = true
+    handle_snapshots                = true
+    suppress_pom_consistency_checks = false
+    reject_invalid_jars             = false
+    remote_repo_checksum_policy_type = "generate-if-absent"
+    max_unique_snapshots            = 0
+}
+
+docker = {
+    block_pushing_schema1         = false
+    enable_token_authentication   = false
+    external_dependencies_enabled = false
+    external_dependencies_patterns = []
+}
+
+nuget = {
+    force_nuget_authentication = false
+}
+
+pypi = {
+    pypi_repository_suffix = "simple"
+}
+
+helm = {
+    external_dependencies_enabled  = false
+    external_dependencies_patterns = []
+}
+
+go = {
+    curated                      = false
+    propagate_query_params       = false
+    retrieve_sha256_from_server  = false
+}
+
+gems = {
+    curated                      = false
+    propagate_query_params       = false
+    retrieve_sha256_from_server  = false
+}
+
+generic = {
+    propagate_query_params       = false
+    retrieve_sha256_from_server  = false
+}
+
+npm = {
+    curated = false
+}
+
+vcs = {
+    max_unique_snapshots = 0
+}
+
+# Types with no special defaults beyond server behavior
+alpine    = {}
+bower     = {}
+chef      = {}
+cocoapods = {}
+composer  = {}
+conda     = {}
+cran      = {}
+debian    = {}
+rpm       = {}
+terraform = {}
+}
+
+
+# Defaults per virtual repository package type.
+# Note: These aim to mirror common Artifactory defaults. Adjust if your instance differs.
+virtual_repo_defaults = {
+# Maven/Gradle/Ivy
+maven = {
+    pom_repository_references_cleanup_policy = null
+}
+gradle = {
+    pom_repository_references_cleanup_policy = null
+}
+ivy = {
+    pom_repository_references_cleanup_policy = null
+}
+
+# Helm
+helm = {
+    use_namespaces = false
+}
+
+# NuGet
+nuget = {
+    force_nuget_authentication = false
+}
+
+# Debian
+debian = {
+    optional_index_compression_formats = null
+    debian_default_architectures       = ""
+}
+
+# Types with no special defaults beyond server behavior
+alpine            = {}
+bower             = {}
+chef              = {}
+cocoapods         = {}
+composer          = {}
+conda             = {}
+cran              = {}
+docker            = {}
+generic           = {}
+go                = {}
+npm               = {}
+pypi              = {}
+rpm               = {}
+terraform         = {}
+terraform_module  = {}
+terraform_provider = {}
+gems              = {}
+helmoci           = {}
+vcs               = {}
+}
