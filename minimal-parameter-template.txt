@@ -63,7 +63,89 @@
   }
 }
 
+--------------------------------------------------
+
 Default values for repos:
+
+--------------------------------------------------
+
+# Common attribute defaults (applied across all repositories when computing "full" defaults).
+# These use null for optional values so server/provider defaults can prevail if you don't override.
+
+# Local repos: common attributes across types
+local_repo_common_defaults = {
+    project_key              = null        # string
+    description              = null        # string
+    notes                    = null        # string
+    includes_pattern         = null        # string
+    excludes_pattern         = null        # string
+    repo_layout_ref          = null        # string
+    priority_resolution      = null        # bool
+    project_environments     = null        # list(string)
+    blacked_out              = null        # bool
+    property_sets            = null        # list(string)
+    archive_browsing_enabled = null        # bool
+    download_direct          = null        # bool
+    cdn_redirect             = null        # bool
+    x_ray_index              = null        # bool
+    primary_keypair_ref      = null        # string
+    secondary_key_pair_ref   = null        # string
+}
+
+# Remote repos: common attributes across types
+remote_repo_common_defaults = {
+    description                           = null        # string
+    notes                                 = null        # string
+    url                                   = null        # string
+    project_key                           = null        # string
+    project_environments                  = null        # list(string)
+    username                              = null        # string
+    password                              = null        # string
+    proxy                                 = null        # string
+    disable_proxy                         = null        # bool
+    includes_pattern                      = null        # string
+    excludes_pattern                      = null        # string
+    repo_layout_ref                       = null        # string
+    remote_repo_layout_ref                = null        # string
+    hard_fail                             = null        # bool
+    offline                               = null        # bool
+    blacked_out                           = null        # bool
+    xray_index                            = null        # bool
+    store_artifacts_locally               = null        # bool
+    socket_timeout_millis                 = null        # number
+    local_address                         = null        # string
+    retrieval_cache_period_seconds        = null        # number
+    metadata_retrieval_timeout_secs       = null        # number
+    missed_cache_period_seconds           = null        # number
+    unused_artifacts_cleanup_period_hours = null        # number
+    assumed_offline_period_secs           = null        # number
+    synchronize_properties                = null        # bool
+    block_mismatching_mime_types          = null        # bool
+    mismatching_mime_types_override_list  = null        # string
+    property_sets                         = null        # list(string)
+    allow_any_host_auth                   = null        # bool
+    enable_cookie_management              = null        # bool
+    bypass_head_requests                  = null        # bool
+    priority_resolution                   = null        # bool
+    client_tls_certificate                = null        # string
+    query_params                          = null        # string
+    list_remote_folder_items              = null        # bool
+    download_direct                       = null        # bool
+    cdn_redirect                          = null        # bool
+    disable_url_normalization             = null        # bool
+    archive_browsing_enabled              = null        # bool
+    content_synchronisation = {
+        enabled                         = null        # bool
+        statistics_enabled              = null        # bool
+        properties_enabled              = null        # bool
+        source_origin_absence_detection = null        # bool
+    }
+}
+
+# Virtual repos: common attributes across types
+virtual_repo_common_defaults = {
+    repositories = []    # list(string)
+}
 
 
 # Defaults per local repository package type.
